@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     fun filternote(list: List<NoteEntity>) : ArrayList<NoteEntity>{
         var newlist = ArrayList<NoteEntity>()
         for (l: NoteEntity in list){
-            if (!l.pin){
+            if (l.pin){
                 newlist.add(l)
             }
         }
